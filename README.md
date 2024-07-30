@@ -1,5 +1,32 @@
 # 📊 Previsão de Estoque Inteligente na AWS com [SageMaker Canvas](https://aws.amazon.com/pt/sagemaker/canvas/)
+Experiência desse novo desafio:
+1 - Acompanhei passo a passo de cada etapa de como configurar a AWS e ML e achei um absurdo de legal como uma plataforma usa a forma de NoCODE.
+2 - Usei a tabular PREÇO PROMOCIONAL E RENOVAÇAO DE ESTOQUE
+3 - Selecionei a coluna PREÇO para análise.
+4 - Fiz a análise dos dados, obtendo as seguintes métricas:
+Métricas de avaliação que ajudam a entender a performance do modelo de previsão.
 
+Avg. wQL (Average Weighted Quantile Loss):
+É uma métrica usada para avaliar modelos de previsão quantílica. Ela mede a qualidade das previsões ao comparar os quantis previstos com os valores reais. Valores mais baixos indicam melhor performance.
+
+MAPE (Mean Absolute Percentage Error):
+É a média dos erros percentuais absolutos entre os valores previstos e os valores reais. Um MAPE de 1.000 indica que, em média, o modelo tem um erro de 100%. Idealmente, esse valor deve ser o mais baixo possível.
+
+WAPE (Weighted Absolute Percentage Error):
+É uma variação do MAPE que leva em consideração o peso dos diferentes itens. Ele oferece uma visão ponderada do erro percentual absoluto. Assim como o MAPE, valores mais baixos indicam uma melhor performance.
+
+RMSE (Root Mean Square Error):
+É a raiz quadrada da média dos erros quadráticos. Ele mede a magnitude do erro entre os valores previstos e os valores reais. Valores mais baixos indicam previsões mais precisas.
+
+MASE (Mean Absolute Scaled Error):
+Compara o erro absoluto médio do modelo com o erro absoluto médio de um modelo de referência simples, como a média histórica. Um valor de MASE menor que 1 indica que o modelo de previsão é melhor que o modelo de referência.
+Essas métricas ajudam a avaliar a precisão e a confiabilidade do modelo de previsão usado na análise dos dados. Aqui está um resumo para facilitar:
+
+Avg. wQL (0.794): Avaliação da qualidade das previsões quantílicas.
+MAPE (1.000): Média dos erros percentuais absolutos (100% de erro em média).
+WAPE (1.090): Erro percentual absoluto ponderado.
+RMSE (615.634): Magnitude do erro entre valores previstos e reais.
+MASE (0.958): Comparação do erro com um modelo de referência (menos de 1 indica boa performance).
 Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, você aprenderá a usar o SageMaker Canvas para criar previsões de estoque baseadas em Machine Learning (ML). Siga os passos abaixo para completar o desafio!
 
 ## 📋 Pré-requisitos
